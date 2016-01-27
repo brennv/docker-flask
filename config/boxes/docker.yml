@@ -3,7 +3,7 @@
   docker_image:
     name: "{{ item.name }}"
     tag: "{{ item.tag }}"
-    path: "/vagrant/provisioning/{{ item.directory }}"
+    path: "/vagrant/config/boxes/{{ item.directory }}"
     state: build
   with_items:
     # - { name: data, tag: "data", directory: data }
